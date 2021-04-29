@@ -5,7 +5,7 @@ metadata:
 spec:
   ports:
   - port: 80
-    targetPort: 8080
+    targetPort: 8383
   selector:
     app: demo-app
   type: LoadBalancer

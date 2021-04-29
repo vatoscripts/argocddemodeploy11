@@ -1,4 +1,4 @@
-apiVersion: kustomize.config.k8s.io/v1beta1
+apiVersion: kustomize.config.k8s.io/v1
 kind: Kustomization
 
 bases:
@@ -9,4 +9,5 @@ patchesStrategicMerge:
 
 images:
 - name: alexmt/argocd-demo
-  newTag: 3824e3ce01af4947d4375c2d8fb22159d12e5c04
+- name: kiyange26773/argocd-demo
+  newTag: 3824e3ce01af4947d4375c2d8fb22159d12e5c05

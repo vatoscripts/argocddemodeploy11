@@ -1,12 +1,12 @@
-apiVersion: apps/v1beta2
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: demo
+  name: demo-app
 spec:
   template:
     spec:
       containers:
-      - name: demo
+      - name: demo-app
         env:
         - name: ENVIRONMENT
           value: prod

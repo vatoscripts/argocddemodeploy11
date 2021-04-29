@@ -1,21 +1,22 @@
-apiVersion: apps/v1beta2
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: demo
+  name: demo-app
 spec:
   replicas: 1
   revisionHistoryLimit: 3
   progressDeadlineSeconds: 30
   selector:
     matchLabels:
-      app: demo
+      app: demo-app
   template:
     metadata:
       labels:
-        app: demo
+        app: demo-app
     spec:
       containers:
-      - image: alexmt/argocd-demo:f27903964ba8e31ad89c31379e300a35fe1632a3
-        name: demo
+      #- image: alexmt/argocd-demo:f27903964ba8e31ad89c31379e300a35fe1632a3
+      -  image: kiyange26773/argocd-demo-app
+        name: demo-app
         ports:
-        - containerPort: 8080
+        - containerPort: 8383

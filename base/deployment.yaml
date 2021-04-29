@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       #- image: alexmt/argocd-demo:f27903964ba8e31ad89c31379e300a35fe1632a3
-      -  image: kiyange26773/argocd-demo-app
+      -  image: kiyange26773/argocd-demo
         name: demo-app
         ports:
         - containerPort: 8383
